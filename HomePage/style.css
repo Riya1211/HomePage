@@ -1,0 +1,126 @@
+:root {
+  --darkgrey: #212329;
+  --lightgrey: #b1b1b1;
+  --brightred: #f94230;
+  --white: #fff;
+  --lightred: #f9433dcc;
+  --lightblue: #337af1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.nav-container {
+  width: 100%;
+  background-color: var(--darkgrey);
+  /* height: 9%; */
+}
+
+.navbar {
+  height: 80px;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#logo {
+  float: left;
+  color: var(--white);
+  font-size: 1.6rem;
+  margin: 1.5rem, 0;
+  cursor: pointer;
+}
+.menue-list {
+  float: right;
+  width: 50%;
+}
+.navbar li {
+  display: inline;
+  padding: 0 35px 0 35px;
+}
+.nav-links {
+  text-decoration: none;
+  color: var(--white);
+}
+.nav-links:hover {
+  color: var(--brightred);
+  transition: all 0.2s ease-out;
+}
+.nav-links-btn {
+  background-color: var(--brightred);
+  padding: 5px 5px;
+  border-radius: 4px;
+}
+.nav-links-btn:hover {
+  background: transparent;
+  border: 1px solid var(--brightred);
+  border-radius: 4px;
+  padding: 5px 5px;
+  transition: all 0.3s ease-out;
+}
+.service-container {
+  /*This is main container*/
+  background-color: var(--darkgrey);
+  height: 90vh;
+}
+.main-content {
+  float: left;
+  color: var(--white);
+  width: 50%;
+  height: 50%;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+.main-content a {
+  color: var(--white);
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+.main-content h1 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.main-content p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+#main-img {
+  height: 90%;
+  width: 90%;
+}
+.main-img-container {
+  float: right;
+  width: 50%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.link-btn {
+  background-color: var(--brightred);
+  padding: 6px 12px;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  width: 8rem;
+  cursor: pointer;
+  position: relative;
+}
+.link-btn:after {
+  content: "";
+  position: absolute;
+  top: 0; /*this is use to align the blue box*/
+  left: 0; /* this is use to align the blue box*/
+  width: 0; /* this is use to align the blue box*/
+  height: 100%;
+  background: var(--lightblue);
+  border-radius: 5px;
+  transition: all 0.35s;
+}
+.link-btn:hover:after {
+  width: 100%;
+}
